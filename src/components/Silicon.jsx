@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Silicon() {
+  const { t } = useLanguage();
+
   return (
     <footer className="silicon">
       <div className="silicon-divider">

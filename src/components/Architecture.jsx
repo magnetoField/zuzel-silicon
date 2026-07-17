@@ -1,27 +1,30 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "../context/LanguageContext";
 import gdsRender from "../assets/gds_render.png";
 import render3d from "../assets/3dgds.png";
 
-const cards = [
-  {
-    title: "Custom CPU",
-    text: "Purpose-built architecture optimized for silicon area."
-  },
-  {
-    title: "VGA Engine",
-    text: "Real-time video generation directly from hardware."
-  },
-  {
-    title: "4 Players",
-    text: "Simple one-bit controls driving competitive races."
-  },
-  {
-    title: "160x120 um",
-   text: "Complete racing game implemented directly in silicon."
-  }
-];
-
 export default function Architecture() {
+  const { t } = useLanguage();
+
+  const cards = [
+    {
+      title: t('architecture.customCpu'),
+      text: t('architecture.customCpuText')
+    },
+    {
+      title: t('architecture.vgaEngine'),
+      text: t('architecture.vgaEngineText')
+    },
+    {
+      title: t('architecture.players'),
+      text: t('architecture.playersText')
+    },
+    {
+      title: t('architecture.siliconSize'),
+      text: t('architecture.siliconSizeText')
+    }
+  ];
+
   return (
     <section className="architecture">
       <div className="architecture-visuals">

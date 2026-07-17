@@ -1,15 +1,18 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "../context/LanguageContext";
 import gameplayImg from "../assets/gameplay.png";
 import codeImg from "../assets/zuzel_code.png";
 import designImg from "../assets/design.png";
 import alltracksImg from "../assets/AllTracks.png";
 
 export default function Story() {
+  const { t } = useLanguage();
+
   const images = [
-    { src: gameplayImg, alt: "Żużel Gameplay" },
-    { src: codeImg, alt: "Verilog Hardware Code" },
-    { src: designImg, alt: "Silicon Layout Design" },
-    { src: alltracksImg, alt: "All Tracks Overview" }
+    { src: gameplayImg, alt: t('story.architecture.players') },
+    { src: codeImg, alt: t('story.architecture.cpu') },
+    { src: designImg, alt: t('story.architecture.top') },
+    { src: alltracksImg, alt: t('story.architecture.vga') }
   ];
 
   return (
@@ -21,7 +24,7 @@ export default function Story() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          1994 → 2026
+          {t('story.title')}
         </motion.h2>
 
         <motion.p
@@ -30,7 +33,7 @@ export default function Story() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          The custom CPU architecture was designed to fit the complete project on an ultra-compact silicon area of just <strong>160 µm x 100 µm</strong>.
+          {t('story.siliconSize')} <strong>160 µm x 120 µm</strong>{t('story.siliconSize2')}
         </motion.p>
 
         <motion.ul
@@ -39,11 +42,11 @@ export default function Story() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <li><strong>7-bit Track Generator CPU</strong> with 3 custom instructions</li>
-          <li><strong>Common Player Control Block</strong> generating 15 control signals</li>
-          <li><strong>4x Player Simulation Blocks</strong> featuring 4 registers, 2x streaming 1-bit ALUs, and 7x7 sprite generators</li>
-          <li><strong>VGA Timing Generator</strong> for real-time video signal output</li>
-          <li><strong>Top-Level Logic</strong> for system integration, video generation, and collision detection</li>
+          <li>{t('story.architecture.cpu')}</li>
+          <li>{t('story.architecture.control')}</li>
+          <li>{t('story.architecture.players')}</li>
+          <li>{t('story.architecture.vga')}</li>
+          <li>{t('story.architecture.top')}</li>
         </motion.ul>
 
         <motion.p
@@ -53,7 +56,7 @@ export default function Story() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          What you see on exhibition is an FPGA implementation of the same Verilog code that was synthesized into silicon using the SkyWater 130 nm open-source PDK.
+          {t('story.footnote')}
         </motion.p>
 
         <motion.div
@@ -67,7 +70,7 @@ export default function Story() {
             href="http://devkk.net/index.php?tag=games&id=39"
             className="btn btn-secondary"
           >
-            Play Online Version
+            {t('story.playOnline')}
           </a>
         </motion.div>
       </div>

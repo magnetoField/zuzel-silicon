@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import heroBg from "../assets/hero.png";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="hero">
       <motion.div
@@ -29,18 +32,17 @@ export default function Hero() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h1>ŻUŻEL IN SILICON</h1>
+        <h1>{t('hero.title')}</h1>
 
         <p>
-          A 1994 motorcycle racing game reimagined
-          as a custom CPU and fabricated ASIC.
+          {t('hero.description')}
         </p>
 
         <a
           href="https://github.com/magnetoField/ttsky-zuzel-ieee"
           className="btn"
         >
-          View Source
+          {t('hero.viewSource')}
         </a>
       </motion.div>
     </section>

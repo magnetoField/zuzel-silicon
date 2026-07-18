@@ -20,7 +20,7 @@ export default function Silicon() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3>Designer Hacker</h3>
+          <h3>{t("silicon.designer")}</h3>
           <p className="name">KK</p>
           <p className="alias">a.k.a Krzysiek-K a.k.a Kejki</p>
         </motion.div>

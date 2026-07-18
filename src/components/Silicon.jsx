@@ -32,7 +32,7 @@ export default function Silicon() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3>Lead Hacker</h3>
+          <h3>{t("silicon.lead")}</h3>
           <p className="name">magnetoField</p>
           <p className="alias">a.k.a Jakub Rachoń</p>
         </motion.div>

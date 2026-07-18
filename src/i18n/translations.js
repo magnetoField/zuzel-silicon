@@ -34,7 +34,9 @@ export const translations = {
     },
     silicon: {
       title: "120 µm × 160 µm",
-      description: "Kompletna gra wyścigowa zaimplementowana bezpośrednio w krzemie."
+      description: "Kompletna gra wyścigowa zaimplementowana bezpośrednio w krzemie.",
+      designer: "Hacker projektujący",
+      lead: "Hacker prowadzący"
     }
   },
   en: {
@@ -72,7 +74,9 @@ export const translations = {
     },
     silicon: {
       title: "120 µm × 160 µm",
-      description: "Complete racing game implemented directly in silicon."
+      description: "Complete racing game implemented directly in silicon.",
+      designer: "Designer Hacker",
+      lead: "Lead Hacker"
     }
   }
 };

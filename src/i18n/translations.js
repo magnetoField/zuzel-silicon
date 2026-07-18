@@ -48,8 +48,7 @@ export const translations = {
     story: {
       title: "1994 → 2026",
       description: "A classic Żużel game transformed into pure digital logic and manufactured through Tiny Tapeout.",
-      siliconSize: "In 1994, Piotr Kamiński created a game at a time when modern intellectual property protection laws were not yet in place in Poland. More than 30 years later, as part of the OpenSilicon bootcamp held at Hackerspace Trójmiasto, an open IP was developed and implemented directly in silicon.
-The architecture of this custom CPU was designed to fit the entire project onto an ultra-compact silicon area measuring just",
+      siliconSize: "In 1994, Piotr Kamiński created a game at a time when modern intellectual property protection laws were not yet in place in Poland. More than 30 years later, as part of the OpenSilicon bootcamp held at Hackerspace Trójmiasto, an open IP was developed and implemented directly in silicon. The architecture of this custom CPU was designed to fit the entire project onto an ultra-compact silicon area measuring just",
       siliconSize2: ".",
       playOnline: "Play Online Version",
       architecture: {

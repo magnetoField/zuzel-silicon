@@ -39,7 +39,7 @@ export default function Silicon() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2026 Żużel in Silicon project. Fabricated in SkyWater 130nm process.</p>
+        <p>RTL to GDS flow provider: <strong>Tiny Tapeout & Wokwi</strong>. Special thanks to Matt Venn and Uri Shaked!</p>
       </div>
     </footer>
   );

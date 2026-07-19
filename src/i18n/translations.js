@@ -12,11 +12,16 @@ export const translations = {
       siliconSize2: ".",
       playOnline: "Graj Online",
       architecture: {
-        cpu: "7-bitowy CPU do generowania tras z 3 niestandardowymi instrukcjami",
-        control: "Wspólny blok gracza generujący 15 sygnałów sterujących",
-        players: "4x bloki gracza z 4 rejestrami, z dwoma 1-bitowymi ALU i generatorami sprite'ów 7x7",
-        vga: "Interfejs VGA do podłączenia standardowego monitora",
-        top: "System nadrzędny odpowiedzalny za obsługę kontrolerów, generowania wideo i wykrywania kolizji"
+		cpu_bullet: "7-bitowy CPU",  
+        cpu: " do generowania tras z 3 niestandardowymi instrukcjami",
+        control_bullet: "Wspólny blok",
+		control: " gracza generujący 15 sygnałów sterujących",
+        players_bullet: "4x bloki gracza",
+		players: " z 4 rejestrami, z dwoma 1-bitowymi ALU i generatorami sprite'ów 7x7",
+        vga_bullet: "Interfejs VGA",
+		vga: " do podłączenia standardowego monitora",
+        top_bullet: "System nadrzędny",
+		top: " odpowiedzalny za obsługę kontrolerów, generowania wideo i wykrywania kolizji"
       },
       footnote: "To, co widzisz na wystawie, to implementacja FPGA tego samego kodu Verilog, który został zsyntetyzowany w układ VLSI/ASIC przy użyciu otwartoźródłoweg EDA oraz PDK SkyWater 130 nm w ramach inicjatywy IEEE OpenSilicon.",
       features: "Cechy"
@@ -50,11 +55,16 @@ export const translations = {
       siliconSize2: ".",
       playOnline: "Play Online Version",
       architecture: {
-        cpu: "7-bit Track Generator CPU with 3 custom instructions",
-        control: "Common Player Control Block generating 15 control signals",
-        players: "4x Player Simulation Blocks featuring 4 registers, 2x streaming 1-bit ALUs, and 7x7 sprite generators",
-        vga: "VGA Timing Generator for real-time video signal output",
-        top: "Top-Level Logic for system integration, video generation, and collision detection"
+		cpu_bullet: "7-bit Track Generator",
+        cpu: " CPU with 3 custom instructions",
+		control_bullet: "Common Player Control Block",
+        control: " generating 15 control signals",
+		players_bullet: "4x Player Simulation Blocks",
+        players: " featuring 4 registers, 2x streaming 1-bit ALUs, and 7x7 sprite generators",
+        vga_bullet: "VGA Timing Generator",
+		vga: " for real-time video signal output",
+		top_bullet: "Top-Level Logic",
+        top: " for system integration, video generation, and collision detection"
       },
       footnote: "What you see on exhibition is an FPGA implementation of the same Verilog code that was synthesized into silicon using the SkyWater 130 nm open-source PDK.",
       features: "Features"

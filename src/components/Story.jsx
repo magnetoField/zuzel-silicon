@@ -42,11 +42,11 @@ export default function Story() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <li>{t('story.architecture.cpu')}</li>
-          <li>{t('story.architecture.control')}</li>
-          <li>{t('story.architecture.players')}</li>
-          <li>{t('story.architecture.vga')}</li>
-          <li>{t('story.architecture.top')}</li>
+          <li><strong>{t('story.architecture.cpu_bullet')}</strong>{t('story.architecture.cpu')}</li>
+          <li><strong>{t('story.architecture.control_bullet')}</strong>{t('story.architecture.control')}</li>
+          <li><strong>{t('story.architecture.players_bullet')}</strong>{t('story.architecture.players')}</li>
+          <li><strong>{t('story.architecture.vga_bullet')}</strong>{t('story.architecture.vga')}</li>
+          <li><strong>{t('story.architecture.top_bullet')}</strong>{t('story.architecture.top')}</li>
         </motion.ul>
 
         <motion.p

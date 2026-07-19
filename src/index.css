@@ -344,7 +344,7 @@ code {
 .architecture {
   background: #08080c;
   color: var(--text);
-  padding: 6rem 2rem;
+  padding: 1rem 2rem;
   box-sizing: border-box;
 }
 
@@ -355,7 +355,7 @@ code {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  padding: 2rem 0 4rem 0;
+  padding: 0 0 1rem 0;
 }
 
 @media (max-width: 900px) {

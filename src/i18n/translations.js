@@ -8,7 +8,7 @@ export const translations = {
     story: {
       title: "1994 → 2026",
       description: "Klasyczna gra Żużel zaimplementowana w czystej logice cyfrowej w pastaci fizycznego krzemu wyprodukowanego jako MPW przez Tiny Tapeout.",
-      siliconSize: "Architektura niestandardowego CPU została zaprojektowana tak, aby zmieścić cały projekt na ultramałym obszarze krzemu o wielkości zaledwie",
+      siliconSize: "W 1994 roku Piotr Kamiński stworzył grę w czasach, gdy w Polsce nie obowiązywały jeszcze współczesne przepisy o ochronie własności intelektualnej. Po ponad 30 latach, w ramach bootcampu OpenSilicon zorganizowanego w Hackerspace Trójmiasto, powstało otwarte IP zaimplementowane bezpośrednio w krzemie. Architektura niestandardowego CPU została zaprojektowana tak, aby zmieścić cały projekt na ultramałym obszarze krzemu o wielkości zaledwie",
       siliconSize2: ".",
       playOnline: "Graj Online",
       architecture: {
@@ -39,7 +39,9 @@ export const translations = {
     },
     silicon: {
       title: "120 µm × 160 µm",
-      description: "Kompletna gra wyścigowa zaimplementowana bezpośrednio w krzemie."
+      description: "Kompletna gra wyścigowa zaimplementowana bezpośrednio w krzemie.",
+      designer: "Hacker projektujący",
+      lead: "Hacker prowadzący"
     }
   },
   en: {
@@ -51,7 +53,7 @@ export const translations = {
     story: {
       title: "1994 → 2026",
       description: "A classic Żużel game transformed into pure digital logic and manufactured through Tiny Tapeout.",
-      siliconSize: "The custom CPU architecture was designed to fit the complete project on an ultra-compact silicon area of just",
+      siliconSize: "In 1994, Piotr Kamiński created a game at a time when modern intellectual property protection laws were not yet in place in Poland. More than 30 years later, as part of the OpenSilicon bootcamp held at Hackerspace Trójmiasto, an open IP was developed and implemented directly in silicon. The architecture of this custom CPU was designed to fit the entire project onto an ultra-compact silicon area measuring just",
       siliconSize2: ".",
       playOnline: "Play Online Version",
       architecture: {
@@ -82,7 +84,9 @@ export const translations = {
     },
     silicon: {
       title: "120 µm × 160 µm",
-      description: "Complete racing game implemented directly in silicon."
+      description: "Complete racing game implemented directly in silicon.",
+      designer: "Designer Hacker",
+      lead: "Lead Hacker"
     }
   }
 };

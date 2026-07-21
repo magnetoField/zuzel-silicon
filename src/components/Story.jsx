@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
+import ImageGallery from "./ImageGallery";
 import gameplayImg from "../assets/gameplay.png";
 import codeImg from "../assets/zuzel_code.png";
 import designImg from "../assets/design.png";
@@ -7,6 +9,8 @@ import alltracksImg from "../assets/AllTracks.png";
 
 export default function Story() {
   const { t } = useLanguage();
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [galleryStartIndex, setGalleryStartIndex] = useState(0);
 
   const images = [
     { src: gameplayImg, alt: t('story.architecture.players') },
@@ -84,6 +88,11 @@ export default function Story() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
+            onClick={() => {
+              setGalleryStartIndex(index);
+              setGalleryOpen(true);
+            }}
+            style={{ cursor: 'pointer' }}
           >
             <img
               src={img.src}
@@ -93,6 +102,14 @@ export default function Story() {
           </motion.div>
         ))}
       </div>
+
+      {galleryOpen && (
+        <ImageGallery
+          images={images}
+          initialIndex={galleryStartIndex}
+          onClose={() => setGalleryOpen(false)}
+        />
+      )}
     </section>
   );
 }

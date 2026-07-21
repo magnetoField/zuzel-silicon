@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
 import gdsRender from "../assets/gds_render.png";
+import gdsRenderFull from "../assets/gds_render_full.png";
 import render3d from "../assets/3dgds.png";
 
 export default function Architecture() {
@@ -35,6 +36,8 @@ export default function Architecture() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          onClick={() => window.open(gdsRenderFull, '_blank')}
+          style={{ cursor: 'pointer' }}
         />
         <motion.img
           src={render3d}
@@ -43,6 +46,8 @@ export default function Architecture() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          onClick={() => window.open('https://gds-viewer.tinytapeout.com/?model=https://magnetofield.github.io/ttsky-zuzel-ieee/tinytapeout.oas&pdk=sky130A', '_blank')}
+          style={{ cursor: 'pointer' }}
         />
       </div>
 

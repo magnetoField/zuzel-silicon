@@ -22,7 +22,7 @@ export default function Silicon() {
         >
           <h3>{t("silicon.designer")}</h3>
           <p className="name">KK</p>
-          <p className="alias">a.k.a Krzysiek-K a.k.a Kejki</p>
+          <p className="alias">a.k.a Krzysztof Kluczek</p>
         </motion.div>
 
         <motion.div
@@ -39,7 +39,7 @@ export default function Silicon() {
       </div>
 
       <div className="footer-bottom">
-        <p>RTL to GDS flow provider: <strong>Tiny Tapeout & Wokwi</strong>. Special thanks to Matt Venn and Uri Shaked!</p>
+        <p>RTL to GDS flow provider: <strong>Tiny Tapeout & Wokwi</strong>. Special thanks to Matt Venn and Uri Shaked and HackerSpace Trójmiasto!</p>
       </div>
     </footer>
   );

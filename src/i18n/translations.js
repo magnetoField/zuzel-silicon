@@ -29,7 +29,7 @@ export const translations = {
     architecture: {
       title: "Architektura",
       customCpu: "Niestandardowy CPU",
-      customCpuText: "Architektura specjalna zoptymalizowana do powierzchni krzemu.",
+      customCpuText: "Architektura specjalnie zoptymalizowana do powierzchni krzemu.",
       vgaEngine: "Silnik VGA",
       vgaEngineText: "Generowanie wideo w czasie rzeczywistym bezpośrednio w krzemie",
       players: "4 Graczy",
